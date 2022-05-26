@@ -104,9 +104,12 @@ chars = ['a',
 # in crypto.py we need to be able to tell how many of each letter there are
 database_dict = {}
 limitvar = 0
+usedcombos = []
 for e, char in enumerate(chars):
     while limitvar < limit:
-        database_dict[str(char) +str(limitvar)] = random.choice(chars)
+        combo = (f'{random.choice(chars)}{random.choice(chars)}{random.choice(chars)}{random.choice(chars)}')
+        database_dict[str(char) +str(limitvar)] = combo
+        usedcombos.append(combo)
         limitvar += 1
     limitvar = 0
 a = open('key.py', 'a')

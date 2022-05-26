@@ -55,6 +55,13 @@ def encrypt(dict):
         a.close()
         
         b = open('dummy.py', 'a')
+        #print(item)
+        if '\\' in item:
+            item = item.replace('\\', '\\\\')
+        if '\'' in item:
+            item = item.replace('\'', '\\\'')
+        if '\"' in item:
+            item = item.replace('\"', '\\\"')
         b.write(str(item))
         b.flush()
         b.close()
