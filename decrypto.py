@@ -3,7 +3,7 @@ from key import *
 os.chdir(sys.path[0])
 
 
-base_string = input('input: ')
+base_string = input('input to decrypt: ')
 
 def decrypt(string):
     global base_string
