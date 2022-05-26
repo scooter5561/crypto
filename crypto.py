@@ -28,11 +28,6 @@ def count_chars(list):
     #    print(char, counted_chars[char])
     #print(counted_chars)
     #print(been_counted)
-    varsfile = open('vars.py', 'w')
-    varsfile.write(f'counted_chars = {counted_chars}\n')
-    varsfile.write(f'string = \'{base_string_string}\'\n')
-    varsfile.flush()
-    varsfile.close()
     return been_counted
 
 def encrypt(dict):
