@@ -4,7 +4,7 @@ os.chdir(sys.path[0])
 
 
 base_string = input('input to decrypt: ')
-
+print('')
 def decrypt(string):
     global base_string
     global database_dict

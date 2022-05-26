@@ -5,6 +5,7 @@ from key import *
 os.chdir(sys.path[0])
 
 base_string = input('input to encrypt: ')
+print('')
 counted_chars = {}
 been_counted = {}
 base_string_string = base_string
